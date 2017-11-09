@@ -16,7 +16,7 @@ for i=1:t-1
     d(i) = miraudio(L((i-1)*fs*4+1:i*4*fs));
 end
 %%
-for i=569:length(d)
+for i=1:length(d)
     feature1=mirattacktime(d(i));
     feature2=mirbrightness(d(i));
     feature3=mirentropy(d(i));
